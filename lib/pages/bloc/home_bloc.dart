@@ -4,7 +4,7 @@ import 'home_event.dart';
 import 'home_state.dart';
 
 class HomeBloc extends Bloc<HomeEvent, HomeState> {
-  HomeBloc(HomeLoadingState homeLoadingState) : super(HomeLoadingState()) {
+  HomeBloc(HomeState initialState) : super(HomeErrorState(message: 'Deu erro :(')) {
     on<HomeEvent>((event, emit) {});
   }
 
